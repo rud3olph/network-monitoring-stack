@@ -65,8 +65,8 @@ services:
     volumes:
       - ./grafana:/var/lib/grafana
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=Cakewalk123
-      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=
+      - GF_SECURITY_ADMIN_USER=
       - TZ=Europe/Amsterdam
     restart: unless-stopped
     
@@ -97,4 +97,3 @@ Source: [Visualising Latency Variance in Grafana](https://peter.run/blog/2019-07
 Source: [Monitor OpenWrt Nodes with Prometheus](https://www.cloudrocket.at/posts/monitor-openwrt-nodes-with-prometheus/)    
 Source: [Monitoring my home network](https://mrkaran.dev/posts/isp-monitoring/)    
 Source: [Mikrotik Exporter](https://github.com/IgorKha/Grafana-Mikrotik/tree/master)
-emailmatthijs@gmail.com
