@@ -27,6 +27,7 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 ## docker-compose.yml   
 ```docker-compose.yml
 version: '3.8'
+
 services:
   prometheus:
     image: prom/prometheus
@@ -41,7 +42,7 @@ services:
       - TZ=Europe/Amsterdam
     command:
       - "--config.file=/etc/prometheus/prometheus.yml"
-    restart: unless-stopped 
+    restart: unless-stopped
 
   telegraf:
     image: telegraf
@@ -49,14 +50,13 @@ services:
     networks:
       - monitoring
     volumes:
-      - /home/rudolf/telegraf:/etc/telegraf/
+      - ./telegraf:/etc/telegraf
     environment:
       - TZ=Europe/Amsterdam
     restart: unless-stopped
 
   grafana:
-    user: "1000"
-    image: grafana/grafana:latest
+    image: grafana/grafana
     container_name: monitoring_grafana
     ports:
       - "3000:3000"
@@ -65,11 +65,12 @@ services:
     volumes:
       - ./grafana:/var/lib/grafana
     environment:
-      - GF_SECURITY_ADMIN_PASSWORD=
-      - GF_SECURITY_ADMIN_USER=
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=admin
       - TZ=Europe/Amsterdam
+    user: "1000"
     restart: unless-stopped
-    
+
   librespeed:
     image: lscr.io/linuxserver/librespeed
     container_name: monitoring_librespeed
@@ -81,7 +82,7 @@ services:
       - TZ=Europe/Amsterdam
       - UNDER_TEST=true
     ports:
-      - "9080:8080"
+      - "9080:80"
     restart: unless-stopped
 
   snmp-exporter-mikrotik:
@@ -89,7 +90,15 @@ services:
     container_name: monitoring_snmp_exporter_mikrotik
     networks:
       - monitoring
+    environment:
+      - TZ=Europe/Amsterdam
+    ports:
+      - "9116:9116"
     restart: unless-stopped
+
+networks:
+  monitoring:
+    driver: bridge
 ```
 
 ### Notes
