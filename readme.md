@@ -15,14 +15,15 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 ## Setup
 
 1. Run the docker compose: sudo docker compose up -d.
-2. Place the telegraf.conf in the root folder (/home/rudolf/) where the docker-compose.yml is.
-3. Place the prometheus.yml in (/home/rudolf/prometheus) /prometheus/
-4. pfSense: Install the node_exporter package and configure the Interface to IOT20. Confirm by visiting http://172.16.20.1:9100/metrics
-5. Add the data sources in Grafana: 
+2. 
+3. Place the telegraf.conf in the root folder where the docker-compose.yml is.
+4. Place the prometheus.yml in /prometheus/
+5. pfSense: Install the node_exporter package and configure the Interface to IOT20. Confirm by visiting http://172.16.20.1:9100/metrics
+6. Add the data sources in Grafana: 
     - Prometheus | http://172.16.20.5:9090
-6. Create the Grafana dashboard by importing the .json
-7. Ubuntu Server - Gringotts: configure node_exporter, see manual. Confirm by visiting http://172.16.20.5:9100/metrics   
-8. Install the LUA packages on the OpenWrt accesspoints, see manual in misc folder.   
+7. Create the Grafana dashboard by importing the .json
+8. Ubuntu Server - Gringotts: configure node_exporter, see manual. Confirm by visiting http://172.16.20.5:9100/metrics   
+9. Install the LUA packages on the OpenWrt accesspoints, see manual in misc folder.   
 
 ## docker-compose.yml   
 ```docker-compose.yml
