@@ -1,4 +1,4 @@
-# Network Monitoring setup with Telegraf -> Prometheus -> Grafana
+# Network Monitoring setup with Telegraf, Prometheus, Grafana Stack
 ![Dashboard](https://github.com/rud3olph/dockercompose/blob/main/Grafana%20-%20Prometheus%20-%20Telegraf/misc/Dashboard.png?raw=true)
 
 ## Workflow   
