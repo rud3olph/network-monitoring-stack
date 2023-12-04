@@ -17,7 +17,7 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 1. Run the docker compose: sudo docker compose up -d.
 2. Place your Telegraf configuration file (telegraf.conf) in the ./telegraf directory on your host machine.   
 3. Place your Prometheus configuration file (prometheus.yml) in the ./prometheus directory on your host machine.   
-4. pfSense: Install the Prometheus node_exporter package and configure the Interface on the same network as Prometheus. (In my case that is: IOT20. Confirm by visiting http://172.16.20.1:9100/metrics)   
+4. pfSense: Install the Prometheus node_exporter package and configure the Interface on the same network as Prometheus. (In my case that is: IoT20. Confirm by visiting http://172.16.20.1:9100/metrics)   
 5. Add the data sources in Grafana:   
     - Prometheus | http://172.16.20.5:9090   
 6. Create the Grafana dashboard by importing the .json from the Grafana folder. 
