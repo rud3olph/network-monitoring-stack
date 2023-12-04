@@ -21,8 +21,8 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 5. Add the data sources in Grafana:   
     - Prometheus | http://172.16.20.5:9090   
 6. Create the Grafana dashboard by importing the .json   
-7. Ubuntu Server - Gringotts: configure node_exporter, see manual. (Confirm by visiting http://172.16.20.5:9100/metrics)   
-8. Install the LUA packages on the OpenWrt accesspoints, see manual in misc folder.   
+7. Ubuntu Server - Gringotts: configure node_exporter, see the manual in the Prometheus folder. (Confirm by visiting http://172.16.20.5:9100/metrics)   
+8. Install the LUA packages on the OpenWrt accesspoints, see the manual in Prometheus folder.   
 
 ### Links   
 Source: [Visualising Latency Variance in Grafana](https://peter.run/blog/2019-07-28-visualising-latency-variance-in-grafana-in-2019/)    
