@@ -20,7 +20,7 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 4. pfSense: Install the Prometheus node_exporter package and configure the Interface on the same network as Prometheus. (In my case that is: IOT20. Confirm by visiting http://172.16.20.1:9100/metrics)   
 5. Add the data sources in Grafana:   
     - Prometheus | http://172.16.20.5:9090   
-6. Create the Grafana dashboard by importing the .json   
+6. Create the Grafana dashboard by importing the .json from the Grafana folder. 
 7. Ubuntu Server - Gringotts: configure node_exporter, see the manual in the Prometheus folder. (Confirm by visiting http://172.16.20.5:9100/metrics)   
 8. Install the LUA packages on the OpenWrt accesspoints, see the manual in Prometheus folder.   
 
