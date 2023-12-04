@@ -1,6 +1,5 @@
 # Network Monitoring setup: Telegraf, Prometheus, Grafana Stack
-![Dashboard](https://github.com/rud3olph/dockercompose/blob/main/Grafana%20-%20Prometheus%20-%20Telegraf/misc/Dashboard.png?raw=true)
-
+![Dashboard]([https://github.com/rud3olph/dockercompose/blob/main/Grafana%20-%20Prometheus%20-%20Telegraf/misc/Dashboard.png?raw=true)
 ## Workflow   
 
 This setup provides a comprehensive monitoring solution for your network, allowing you to track system metrics, internet speed, and SNMP metrics from Mikrotik devices and OpenWRT Prometheus metrics.   
