@@ -24,7 +24,8 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 7. Ubuntu Server - Gringotts: configure node_exporter, see the manual in the Prometheus folder. (Confirm by visiting http://172.16.20.5:9100/metrics)   
 8. Install the LUA packages on the OpenWrt accesspoints, see the manual in Prometheus folder.
 
-### Current networkdiagram
+### Current networkdiagram   
+
 ![Diagram](https://github.com/rud3olph/network-monitoring-stack/blob/main/Misc/Network%20Diagram%20v3.png)
 
 ### Links   
