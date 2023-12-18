@@ -26,7 +26,7 @@ Grafana serves as the visualization platform, providing a user-friendly interfac
 
 ## Current networkdiagram   
 
-![Diagram](https://github.com/rud3olph/network-monitoring-stack/blob/main/Misc/Network%20Diagram%20v3.png)
+![Diagram](https://github.com/rud3olph/network-monitoring-stack/blob/main/Misc/Network%20Diagram%20v4.png)
 
 ### Links   
 Source: [Visualising Latency Variance in Grafana](https://peter.run/blog/2019-07-28-visualising-latency-variance-in-grafana-in-2019/)    
