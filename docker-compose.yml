@@ -80,6 +80,19 @@ services:
       PLEX_TOKEN: C5oFWwDsxHtBP6iJYoZz
     restart: unless-stopped
 
+      qbittorrent-exporter:
+    image: esanchezm/prometheus-qbittorrent-exporter
+    container_name: monitoring_qbittorrent
+    ports:
+      - "9320:9320"
+    environment:
+      - QBITTORRENT_HOST=http://172.16.20.5:8080
+      - QBITTORRENT_USER=admin
+      - QBITTORRENT_PASSWORD=password
+    networks:
+      - monitoring
+    restart: unless-stopped
+
 networks:
   monitoring:
     driver: bridge
