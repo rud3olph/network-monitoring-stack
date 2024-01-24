@@ -24,10 +24,10 @@ scrape_configs:
       - targets: ['172.16.99.6:9100']
   - job_name: 'telegraf'
     static_configs:
-      - targets: ['172.23.0.5:9273']
-  - job_name: 'Plex'
+      - targets: ['172.23.0.3:9273']
+  - job_name: 'Qbittorrent'
     static_configs:
-      - targets: ['172.23.0.*:9000']
+     - targets: ['172.23.0.8:8000']
   - job_name: 'Mikrotik'
     static_configs:
       - targets: ['172.16.99.2']
