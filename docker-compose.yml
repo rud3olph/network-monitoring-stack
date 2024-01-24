@@ -76,7 +76,7 @@ services:
     ports:
       - 9000:9000/tcp
   environment:
-    PLEX_SERVER: <Your Plex server URL>
+    PLEX_SERVER: http://172.16.20.5:32400
     PLEX_TOKEN: <Your Plex server admin token>
   restart: unless-stopped
 
