@@ -68,6 +68,18 @@ services:
       - "9116:9116"
     restart: unless-stopped
 
+  prom-plex-exporter:
+    image: ghcr.io/jsclayton/prometheus-plex-exporter
+    container_name: monitoring_plex
+    networks:
+      - monitoring
+    ports:
+      - 9000:9000/tcp
+  environment:
+    PLEX_SERVER: <Your Plex server URL>
+    PLEX_TOKEN: <Your Plex server admin token>
+  restart: unless-stopped
+
 networks:
   monitoring:
     driver: bridge
