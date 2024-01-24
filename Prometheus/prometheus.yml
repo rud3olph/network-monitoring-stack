@@ -25,6 +25,9 @@ scrape_configs:
   - job_name: 'telegraf'
     static_configs:
       - targets: ['172.23.0.5:9273']
+  - job_name: 'Plex'
+    static_configs:
+      - targets: ['172.23.0.*:9000']
   - job_name: 'Mikrotik'
     static_configs:
       - targets: ['172.16.99.2']
